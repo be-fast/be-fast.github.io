@@ -80,9 +80,11 @@ function findTIME() {
 
 generateScramble();
 
+ison = false;
+
 document.onkeydown = function (event) {
     event = event || window.event;
-    if(window.event.keyCode == 32) {
+    if(event.keyCode == 32) {
         document.getElementById('screen').style.background = "#4285f4";
         document.getElementById('current-time').style.color = "#fff";
     }
@@ -90,7 +92,7 @@ document.onkeydown = function (event) {
 
 document.onkeyup = function (event) {
     event = event || window.event;
-    if(window.event.keyCode == 32) {
+    if(event.keyCode == 32) {
         document.getElementById('screen').style.background = "#fff";
         document.getElementById('current-time').style.color = "#222";
         findTIME();
