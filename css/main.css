@@ -29,6 +29,9 @@ body {
 	border: 1px solid #fff;
 	margin: 13px 0;
 }
+.header select:focus {
+	color: #222;
+}
 #screen {
 	height: calc(100vh - 70px);
 	background: #fff;
