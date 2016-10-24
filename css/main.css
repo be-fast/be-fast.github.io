@@ -6,20 +6,32 @@
 	font-family: 'Open Sans', sans-serif;
 }
 body {
-
+	background: #ccc;
 }
 .header {
 	width: 100%;
 	height: 70px;
 	background: #4285f4;
+	padding: 0 30px;
 }
 .header h1 {
 	color: #fff;
 	line-height: 70px;
-	text-align: center;
+	float: left;
+}
+.header select {
+	float: right;
+	height: 44px;
+	padding: 0 20px;
+	font-size: 14px;
+	color: #fff;
+	background: transparent;
+	border: 1px solid #fff;
+	margin: 13px 0;
 }
 #screen {
 	height: calc(100vh - 70px);
+	background: #fff;
 }
 #screen h1 {
 	text-align: center;
