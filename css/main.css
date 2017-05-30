@@ -4,6 +4,7 @@
 	box-sizing: border-box;
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
+	user-select: none;
 }
 body {
 	background: #ccc;
