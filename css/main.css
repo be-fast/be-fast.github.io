@@ -5,6 +5,10 @@
 	font-weight: 300;
 	font-family: 'Open Sans', sans-serif;
 	user-select: none;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-o-user-select: none;
+	-ms-user-select: none;
 }
 body {
 	background: #ccc;
