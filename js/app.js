@@ -1,6 +1,9 @@
 window.onload = function () {
     var scramble = document.getElementById("scramble");
     var selectedEvent = document.getElementById("selectedEvent");
+    particlesJS.load('particles-js', 'particles.json', function() {
+        console.log('callback - particles.js config loaded');
+    });
 }
 
 var generateScramble = function () {
@@ -137,16 +140,14 @@ ison = false;
 document.onkeydown = function (event) {
     event = event || window.event;
     if(event.keyCode == 32) {
-        document.getElementById('screen').style.background = "#4285f4";
-        document.getElementById('current-time').style.color = "#fff";
+        document.getElementById('current-time').style.color = "#3498db";
     }
 }
 
 document.onkeyup = function (event) {
     event = event || window.event;
     if(event.keyCode == 32) {
-        document.getElementById('screen').style.background = "#fff";
-        document.getElementById('current-time').style.color = "#222";
+        document.getElementById('current-time').style.color = "#fff";
         findTIME();
     }
 }
